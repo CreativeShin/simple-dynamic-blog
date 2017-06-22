@@ -1,0 +1,25 @@
+<% include ./partials/header %>
+<div class="container" style="margin-top: 5%;">
+    
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+            <h2>Edit <%= blog.title %></h2>
+            <form action="/blogs/<%= blog._id %>?_method=PUT" method="POST">
+                <div class="form-group">
+                    <label>Title</label>
+                    <input class="form-control" type="text" name="blog[title]" value="<%= blog.title %>">
+                </div>
+                <div class="form-group">
+                    <label>Image</label>
+                    <input class="form-control" type="text" name="blog[image]" value="<%= blog.image %>">
+                </div>
+                <div class="form-group">
+                    <label>Description</label>
+                    <textarea class="form-control" name="blog[description]"><%= blog.description %></textarea>
+                </div>
+                <button class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+ </div>   
+<% include ./partials/footer %>

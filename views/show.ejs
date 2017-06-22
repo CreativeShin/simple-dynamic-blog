@@ -1,0 +1,25 @@
+<% include ./partials/header %>
+<div class="container">
+    <div class="row">  
+            <div class="col-sm-6 col-sm-offset-3" style="margin-top: 5%;">
+               <h2><%= blog.title %></h2>
+               <div>
+                  <p><%=blog.created.toDateString() %></p>
+               </div>
+               <div class="thumbnail">
+                   <img src="<%= blog.image %>">
+               </div>
+               <div class="caption">
+                   <p><%=blog.description.substring(0,100) + "..." %></p>
+               </div>
+                <form action= "/blogs/<%= blog.id %>/edit" method = "GET">
+                    <button class="btn btn-primary" style="margin-top: 2%;">Edit</button>
+                </form>
+                <form action= "/blogs/<%= blog.id %>?_method=DELETE" method = "POST">
+                    <button class="btn btn-danger" style="margin-top: 2%;">Delete</button>
+                </form>
+            </div>
+        </div>
+</div>
+
+<% include ./partials/footer %>
