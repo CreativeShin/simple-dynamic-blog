@@ -10,7 +10,7 @@ Main technologies and packages used:
 * MongoDB
 * Mongoose
 * body-parser
-* ejs
+* Embedded JS
 * Bootstrap
 * HTML5/ CSS3/ JS
 
