@@ -4,6 +4,7 @@ A simple dynamic blog app created with the help of MongoDB, ExpressJS, NodeJS an
 #### Fully functional CRUD 
 
 Main technologies and packages used: 
+##### Backend
 
 * NodeJS
 * ExpressJS
@@ -12,5 +13,9 @@ Main technologies and packages used:
 * body-parser
 * ejs
 
+###### Frontend
+
+* Bootstrap
+* HTML5/ CSS3/ JS
 
 
